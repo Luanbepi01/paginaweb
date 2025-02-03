@@ -8,7 +8,7 @@
 body{
     width: 100%;
     height: 100vh;
-    
+    background-color: rgba(0, 0, 0, 0.767);
 }
 
 .header {
@@ -18,13 +18,13 @@ body{
 
 .header h1 {
     font-size: 40px;
-    color: #0a2fb6;
+    color: white;
     margin-bottom: 5px;
 }
 
 .header p {
     font-size: 18px;
-    color: #333;
+    color: white;
 }
 
 .container{
@@ -43,9 +43,8 @@ body{
     width: 300px;
     min-height: 450px; /* Define uma altura mínima para os cards */
     height: auto;
-    padding: 10px 0;
+    padding: 0;
     text-align: center;
-    background: linear-gradient(135deg,#ee20d6 0%, #0a2fb6 100%);
     border-radius: 15px;
     box-shadow: 2px;
     transition: transform 0.3s;
@@ -55,15 +54,55 @@ body{
     transform: scale(1.050);
 }
 
-.container .card .card-title{
-    padding: 30px 20px;
-    border-bottom: 2px solid gray;
+/* Card Livre */
+.card-livre {
+    background: linear-gradient(135deg, #8a2be2 50%, #8a2be2 50%);
+}
+
+/* Card Padrão */
+.card-padrao {
+    background: linear-gradient(135deg, hsl(162, 60%, 31%) 100%, hsl(162, 60%, 35%));
+}
+
+/* Card Mais */
+.card-mais {
+    background: linear-gradient(135deg, #1d6cb6 100%, #1d6cb6 100%);
+}
+
+/* Card Emp. Em breve */
+.card-emp-em-breve {
+    background: linear-gradient(135deg, #c47c1d 100%, #c47c1d 100%);
+}
+
+.container .card .card-title {
+    width: 100%; /* Ocupa toda a largura do card */
+    background: rgba(216, 176, 255, 0.3); /* Ajuste a cor conforme necessário */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    /* 🔥 Aumente a altura conforme necessário */
+    height: 180px; /* Teste valores maiores se necessário */
+
+    /* Remove margens e paddings que podem estar interferindo */
+    padding: 0;
+    margin: 0;
+
+    /* Garante que o conteúdo dentro dele não afete o tamanho */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Impede que o conteúdo interno estoure o tamanho */
+    overflow: hidden;
 }
 
 .container .card .card-title h2{
-    font-size: 35px;
+    font-size: 20px;
     padding-bottom: 15px;
-    color: yellow;
+    color: white;
 }
 
 .container .card .card-title p span{
