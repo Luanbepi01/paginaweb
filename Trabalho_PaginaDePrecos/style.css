@@ -40,7 +40,7 @@ body{
 }
 
 .container .card{
-    width: 300px;
+    width: 500px;
     min-height: 450px; /* Define uma altura mínima para os cards */
     height: auto;
     padding: 0;
@@ -101,13 +101,16 @@ body{
 
 .container .card .card-title h2{
     font-size: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 1px;
     color: white;
+    margin-bottom: 0;
 }
 
 .container .card .card-title p span{
     font-size: 40px;
     padding: 0 5px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .container .card .card-content ul{
