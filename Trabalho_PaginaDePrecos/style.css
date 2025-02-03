@@ -108,7 +108,7 @@ body{
 
 .container .card .card-title p span{
     display: block;
-    font-size: 45px;
+    font-size: 40px;
     padding: 0 5px;
     margin-top: 0;
     padding-top: 0;
@@ -131,7 +131,7 @@ body{
 }
 
 .container .card .card-content button{
-    width: 250px;
+    width: 200px;
     padding: 10px 20px;
     background: white;
     border-radius: 20px;
