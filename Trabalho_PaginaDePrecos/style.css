@@ -40,8 +40,8 @@ body{
 }
 
 .container .card{
-    width: 500px;
-    min-height: 450px; /* Define uma altura mínima para os cards */
+    width: 600px;
+    min-height: 500px; /* Define uma altura mínima para os cards */
     height: auto;
     padding: 0;
     text-align: center;
@@ -83,16 +83,16 @@ body{
     border-bottom-left-radius: 15px;
 
     /* 🔥 Aumente a altura conforme necessário */
-    height: 180px; /* Teste valores maiores se necessário */
+    height: 200px; /* Teste valores maiores se necessário */
 
     /* Remove margens e paddings que podem estar interferindo */
-    padding: 0;
-    margin: 0;
+    padding: 10px 20px;
+    margin-bottom: 0;
 
     /* Garante que o conteúdo dentro dele não afete o tamanho */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     /* Impede que o conteúdo interno estoure o tamanho */
@@ -101,16 +101,18 @@ body{
 
 .container .card .card-title h2{
     font-size: 20px;
-    padding-bottom: 1px;
+    padding-bottom: 5px;
     color: white;
     margin-bottom: 0;
 }
 
 .container .card .card-title p span{
-    font-size: 40px;
+    display: block;
+    font-size: 45px;
     padding: 0 5px;
     margin-top: 0;
     padding-top: 0;
+    margin-bottom: 0;
 }
 
 .container .card .card-content ul{
@@ -129,7 +131,7 @@ body{
 }
 
 .container .card .card-content button{
-    width: 150px;
+    width: 250px;
     padding: 10px 20px;
     background: white;
     border-radius: 20px;
@@ -156,5 +158,7 @@ body{
 .card-content ul {
     max-width: 280px; /* Limita a largura do texto */
     word-wrap: break-word; /* Quebra palavras longas */
-    margin: auto; /* Centraliza o texto */
+    margin: 15px; /* Remove qualquer margem automática */
+    padding: 5px; /* Remove qualquer padding */
+    text-align: center; /* Centraliza o texto dentro do card-title */
 }
